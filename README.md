@@ -1,4 +1,4 @@
-# calculon 1.0
+# Calculon
 
 Calculadora cientifica web. Lenguajes utilizados: HTML, CSS, JavaScript, PHP
 
