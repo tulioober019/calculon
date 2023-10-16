@@ -112,12 +112,12 @@
                 <td><button type="button" id="botonSuma" name="botonSuma" onclick="pantalla.value = pantalla.value + '+'" class="botonOperacion">+</button></td>
             </tr>
             <?php
-                $entrada = str_replace("^","**",$entrada);
+                $entrada = str_replace("^","**",$entrada); 
                 $entrada = str_replace("ln(","log(",$entrada);
                 try {
-                    $resultado = eval("return $entrada;");
+                    $resultado = eval("return $entrada;"); // Con esta función de php, se puede evaluar operaciones matemáticas en forma de cadenas de texto (strings).
                 } catch (Throwable $ex) {
-                    $resultado = "ERROR";
+                    $resultado = "ERROR"; // Si se produce algún excepción como un ZeroByDivisionError, el catch lo capaturará haciendo que no pete la programa.
                 }
 
                 echo "<p>Resultado: {$resultado}</p>"; 
