@@ -61,14 +61,14 @@
     <title>App</title>
 </head>
 <body>
-    <table>
+    <table><!-- Utilizando una tabla, podemos colocar de una forma ordenada los botones de nuestra calculadora científica -->
         <?php
-            $entrada = $_GET['pantalla']??"";
+            $entrada = $_GET['pantalla']??""; // Almacena el input introducido.
         ?>
         <form method="get" action="" id="calc-cientifica" name="calc-cientifica">
             <tr>
                 <td colspan="8">
-                    <input type="text" id="pantalla" name="pantalla" class="comp-calculadora">
+                    <input type="text" id="pantalla" name="pantalla" class="comp-calculadora"> <!-- Pantalla de introducción de los numeros -->
                 </td>
             </tr>
             <tr>
