@@ -56,7 +56,7 @@
     </style>
     <script>
         var pantalla = document.getElementById('pantalla');
-        var num7 = document.getElementById('num7');
+        // var num7 = document.getElementById('num7');
     </script>
     <title>App</title>
 </head>
